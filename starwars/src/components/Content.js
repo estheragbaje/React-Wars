@@ -10,11 +10,15 @@ const Flex = styled.div`
 
 const ContentContainer = styled.div`
     background-color: white;
-    margin: 3rem;
+    margin: 3rem 0;
     padding: 3rem;
     border: 0.2rem solid grey
     border-radius: 0.5rem
 }
+`;
+
+const StyledUl = styled.div`
+  font-size: 1.2rem;
 `;
 
 function Content(props) {
@@ -42,31 +46,35 @@ function Content(props) {
         <div>
           <Text>Height is {height}"</Text>
           <Text>Mass is {mass}kg</Text>
-          <Text>Gender is {gender}</Text>
         </div>
         <div>
+          <Text>Gender is {gender}</Text>
           <Text>Hair color is {hair_color}</Text>
+        </div>
+        <div>
           <Text>Eye color is {eye_color}</Text>
           <Text>Skin color is {skin_color}</Text>
         </div>
       </Flex>
 
       <Flex>
-        <ul>
+        <StyledUl>
           {films.map(film => (
             <li>Fav film: {film}</li>
           ))}
-        </ul>
-        <ul>
+        </StyledUl>
+
+        <StyledUl>
           {starships.map(starship => (
             <li>Starship owned: {starship}</li>
           ))}
-        </ul>
-        <ul>
+        </StyledUl>
+
+        <StyledUl>
           {vehicles.map(vehicle => (
             <li>Vehicle owned: {vehicle}</li>
           ))}
-        </ul>
+        </StyledUl>
       </Flex>
     </ContentContainer>
   );

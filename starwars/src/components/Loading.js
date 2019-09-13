@@ -21,7 +21,8 @@ const Loader = styled.div`
 `;
 
 const LoaderText = styled.p`
-  font-size: 24px;
+  font-size: 2rem;
+  color: white;
 `;
 
 function Loading() {
