@@ -5,7 +5,7 @@ import Text from "./Text";
 const Flex = styled.div`
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
 `;
 
 const ContentContainer = styled.div`
@@ -34,12 +34,14 @@ function Content(props) {
 
   return (
     <ContentContainer>
-      <Text size="big">{name}</Text>
+      <Text size="big" color="#7ec0ee">
+        {name}
+      </Text>
       <hr />
       <Flex>
         <div>
-          <Text>Height is {height}</Text>
-          <Text>Mass is {mass}</Text>
+          <Text>Height is {height}"</Text>
+          <Text>Mass is {mass}kg</Text>
           <Text>Gender is {gender}</Text>
         </div>
         <div>
@@ -49,23 +51,23 @@ function Content(props) {
         </div>
       </Flex>
 
-      <div>
+      <Flex>
         <ul>
           {films.map(film => (
-            <li>{film}</li>
+            <li>Fav film: {film}</li>
           ))}
         </ul>
         <ul>
           {starships.map(starship => (
-            <li>{starship}</li>
+            <li>Starship owned: {starship}</li>
           ))}
         </ul>
         <ul>
           {vehicles.map(vehicle => (
-            <li>{vehicle}</li>
+            <li>Vehicle owned: {vehicle}</li>
           ))}
         </ul>
-      </div>
+      </Flex>
     </ContentContainer>
   );
 }

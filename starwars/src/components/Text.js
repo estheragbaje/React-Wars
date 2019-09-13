@@ -13,6 +13,7 @@ const Text = styled.p`
     }
   }};
   font-weight: ${props => props.weight};
+  color: ${props => props.color};
 `;
 
 export default Text;
