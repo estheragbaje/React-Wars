@@ -24,7 +24,7 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-1. What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+##1 What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
 ReactJS is a JavaScript library which is used for building user interfaces specifically for single page applications. It’s used for handling view layer for web and mobile apps.
 One of the problems React solves is described below:
@@ -35,7 +35,7 @@ One of the problems React solves is described below:
 - It is declarative. When changes in data happen React is aware of how to update the changes
 - React is component based. This makes development of reusable code that is easy to test.
 
-2. What does it mean to _think_ in react?
+##2 What does it mean to _think_ in react?
 
 To think in react simply means to think in components.
 When a UI project is given to a developer to build, thinking in react helps to have a good grasp of how to break down each part of the UI into components. It is the premier way to build big, fast Web apps with JavaScript. The thought process of react can be seen below:
@@ -46,17 +46,19 @@ When a UI project is given to a developer to build, thinking in react helps to h
 - Step 4: Identify Where Your State Should Live
 - Step 5: Add Inverse Data Flow
 
-3. Describe state.
-   State is a JavaScript object that stores a component’s dynamic data and determines the component’s behaviour. Because state is dynamic, it enables a component to keep track of changing information in between renders and for it to be dynamic and interactive. State can only be used within a class component. When state changes, the component responds by re-rendering.
+##3 Describe state.
+State is a JavaScript object that stores a component’s dynamic data and determines the component’s behaviour. Because state is dynamic, it enables a component to keep track of changing information in between renders and for it to be dynamic and interactive. State can only be used within a class component. When state changes, the component responds by re-rendering.
 
-4. Describe props.
-   Props can best be defined as a way of passing data from component to component, basically from parent to child component. Props make components reusable by giving components the ability to receive data from the parent component in the form of props.
-   Props can be used in two ways:
+##4 Describe props.
+Props can best be defined as a way of passing data from component to component, basically from parent to child component. Props make components reusable by giving components the ability to receive data from the parent component in the form of props.
+Props can be used in two ways:
 
 - Functional component
 - Class component
 
-- [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+##5 What are side effects, and how do you sync effects in a React component to state or prop changes?
+A side effect is anything that affects something outside the scope of the function being executed. Examples of side effects are: fetching data from an API, timers, logging, and manually manipulating the DOM.
+A side effect is something that can cause a component to return a different output for the same state and props. React offers us tools for managing side effects so we can avoid bugs and inconsistencies in our app.
 
 ## Project Set Up
 
