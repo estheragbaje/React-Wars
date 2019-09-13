@@ -2,6 +2,21 @@ import React from "react";
 import styled from "styled-components";
 import Text from "./Text";
 
+const Flex = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+`;
+
+const ContentContainer = styled.div`
+    background-color: white;
+    margin: 3rem;
+    padding: 3rem;
+    border: 0.2rem solid grey
+    border-radius: 0.5rem
+}
+`;
+
 function Content(props) {
   const {
     name,
@@ -18,21 +33,22 @@ function Content(props) {
   } = props;
 
   return (
-    <>
+    <ContentContainer>
       <Text size="big">{name}</Text>
       <hr />
-      <div>
+      <Flex>
         <div>
-          <Text>{height}</Text>
-          <Text>{mass}</Text>
-          <Text>{gender}</Text>
+          <Text>Height is {height}</Text>
+          <Text>Mass is {mass}</Text>
+          <Text>Gender is {gender}</Text>
         </div>
         <div>
-          <Text>{hair_color}</Text>
-          <Text>{eye_color}</Text>
-          <Text>{skin_color}</Text>
+          <Text>Hair color is {hair_color}</Text>
+          <Text>Eye color is {eye_color}</Text>
+          <Text>Skin color is {skin_color}</Text>
         </div>
-      </div>
+      </Flex>
+
       <div>
         <ul>
           {films.map(film => (
@@ -50,7 +66,7 @@ function Content(props) {
           ))}
         </ul>
       </div>
-    </>
+    </ContentContainer>
   );
 }
 
